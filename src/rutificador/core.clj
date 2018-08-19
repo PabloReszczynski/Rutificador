@@ -68,3 +68,18 @@
   [n]
   (->> (gen/sample rut-gen n)
        (map #(apply str %))))
+
+(defn beautify-rut
+  "20345678k -> 20.345.678-k"
+  [rut]
+  (let [ver (last (seq rut))]
+    (->> (seq rut)
+        reverse
+        next
+        (partition-all 3)
+        (interpose \.)
+        flatten
+        reverse
+        doall
+        (apply str)
+        ((fn [x] (str x "-" ver))))))
