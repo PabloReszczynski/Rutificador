@@ -8,6 +8,11 @@ La aplicación está corriendo en [Heroku](https://arcane-dawn-87092.herokuapp.c
 
 FIXME
 
+## Roadmap
+- [ ] Reducir largo de los ruts generados para ser mas convincentes
+- [ ] Generador de nombres y dirección
+- [ ] Extension de chrome/firefox para autocompletar formularios
+
 ## License
 
 Copyright © 2018 Pablo Reszczynski
